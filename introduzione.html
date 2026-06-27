@@ -18,7 +18,7 @@
         <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="nozioni-di-base.html">
+        <link rel="next" href="le-basi.html">
       
       
         
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -340,14 +342,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nozioni-di-base.html" class="md-nav__link">
+      <a href="le-basi.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Nozioni di base
+    2. Le basi
   
 
     
@@ -367,14 +369,14 @@
   
   
     <li class="md-nav__item">
-      <a href="introduzione-allo-sviluppo-web-con-aspnet.html" class="md-nav__link">
+      <a href="introduzione-allo-sviluppo-web--aspnet.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Introduzione allo sviluppo web con ASP.NET
+    3. Introduzione allo sviluppo web  ASP.NET
   
 
     
@@ -428,7 +430,7 @@
   <span class="md-ellipsis">
     
   
-    5. Gestione dell'interfaccia utente
+    5. Gestione dell’interfaccia utente
   
 
     
@@ -556,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="appendici---strumenti-di-sviluppo-web.html" class="md-nav__link">
+      <a href="appendici---gli-strumenti-per-lo-sviluppo-web.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Appendici - Strumenti di sviluppo web
+    10. Appendici - Gli strumenti per lo sviluppo web
   
 
     
@@ -593,20 +595,16 @@
 
 
 
-<h1 id="1-introduzione">1. Introduzione</h1>
-<p>Il PDF di questo documento è disponibile |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDLU8CQGIXSQZ4BWZgAeVaZAdvx991Wygi3G7dNtIQUEkY?e=Cmzsmn">QUI</a>|.</p>
-<p>Questo documento è un supplemento al corso: non è un corso completo. Per approfondire lo studio è necessaria l&#x27;assistenza di un istruttore e, inoltre, diversi argomenti non sono stati trattati. La sua stesura è stata influenzata dal background dell&#x27;autore, che in precedenza aveva scritto due documenti sullo sviluppo web: prima in Java e poi in PHP. Questi due documenti hanno una struttura simile, consentendo un confronto tra le due tecnologie utilizzando gli stessi esempi. Lo stesso approccio è stato adottato qui per lo sviluppo ASP.NET. Il risultato è un documento piuttosto diverso da ciò che si trova nelle librerie, dove quasi tutti i libri sottolineano che ASP.NET consente di sviluppare un&#x27;applicazione web proprio come si svilupperebbe un&#x27;applicazione Windows. L&#x27;interfaccia visualizzata nel browser del cliente può essere costruita come un&#x27;interfaccia Windows:</p>
+<h1 id="1-introduzione">1. <span style="color: #365f91">Introduzione</span></h1>
+<p>Il codice PDF di questo documento è disponibile |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDLU8CQGIXSQZ4BWZgAeVaZAdvx991Wygi3G7dNtIQUEkY?e=ccMf1x">QUI</a>|.</p>
+<p>Questo documento è un supporto didattico: non è un corso completo. Per approfondimenti è necessario l’aiuto di un docente e, inoltre, alcuni argomenti non sono stati trattati. La sua stesura è stata influenzata dal background dell’autore, che in precedenza aveva scritto due documenti sullo sviluppo web, prima in Java e poi in PHP. Questi due documenti hanno una struttura analoga che consente di confrontare le due tecnologie sugli stessi esempi. Lo stesso approccio è stato adottato qui per lo sviluppo in ASP.NET. Il risultato è un documento piuttosto diverso da ciò che si trova in libreria, dove quasi tutti i libri sottolineano il fatto che ASP.NET permette di sviluppare un’applicazione web proprio come si sviluppa un’applicazione Windows. L’interfaccia che viene presentata nel browser del cliente può essere costruita come un’interfaccia Windows:</p>
 <ul>
-  <li>utilizzando IDE come Visual Studio.NET o WebMatrix, l&#x27;interfaccia utente viene costruita utilizzando oggetti grafici che vengono trascinati e rilasciati nella finestra di progettazione
-  </li>
-  <li>questi oggetti hanno proprietà, metodi e generano eventi
-  </li>
+<li>con IDE quali Visual Studio.NET o WebMatrix, l’interfaccia utente viene costruita con oggetti grafici che si trascinano nella finestra di progettazione</li>
+<li>questi oggetti hanno proprietà, metodi e generano eventi</li>
 </ul>
-
-<p>Qui trattiamo solo gli elementi essenziali di questi concetti, che sono considerati tra i più innovativi in ASP.NET... Questi concetti importanti ma non fondamentali sono trattati nel Volume 2 di questo corso. In questo Volume 1, abbiamo ritenuto più importante concentrarci sui fondamenti dello sviluppo web, che si applicano indipendentemente dalla tecnologia utilizzata (Java, PHP, ASP.NET). Le estensioni proprietarie di ASP.NET che consentono una maggiore produttività saranno trattate in seguito. Nella nostra presentazione dello sviluppo web, poniamo grande enfasi sull&#x27;architettura MVC (Model, View, Controller), spesso raccomandata per la creazione di applicazioni web.  Questo concetto è indipendente dalla tecnologia utilizzata. Si trova però in contrasto con l&#x27;approccio di progettare un&#x27;applicazione web come un&#x27;applicazione Windows, come sostenuto dalla tecnologia ASP.NET. Questo è l&#x27;altro motivo per cui questo concetto, così lodato nella letteratura su ASP.NET, è stato relegato al Volume 2.</p>
-<p>Poiché questo documento è destinato agli studenti, per i nostri esempi utilizziamo solo strumenti disponibili gratuitamente su Internet. I lettori potranno così procurarseli e testare gli esempi sui propri computer. L&#x27;appendice &quot;Strumenti Web&quot; fornisce le istruzioni per ottenere e installare questi strumenti.</p>
-<p>Serge Tahé</p>
-<p>Aprile 2004</p>
+<p>Qui ci limitiamo a fornire le informazioni essenziali su questi concetti, considerati tra i più innovativi di ASP.NET... Questi concetti, importanti ma non fondamentali, sono presentati nel volume 2 di questo corso. In questo volume 1, è sembrato più importante soffermarsi sui fondamenti dello sviluppo web che si ritrovano indipendentemente dalla tecnologia utilizzata (Java, PHP, ASP.NET). Le estensioni proprietarie di ASP.NET, che consentono una maggiore produttività, saranno trattate in seguito. Nella nostra presentazione dello sviluppo web poniamo grande enfasi sull’architettura MVC (Modello, Vista, Controller), spesso raccomandata per la creazione di applicazioni web.  Questo concetto è indipendente dalla tecnologia utilizzata. Si dà il caso che esso si adatti male all’approccio che consiste nel concepire un’applicazione web come un’applicazione Windows, raccomandato dalla tecnologia ASP.NET. Questo è l’altro motivo per cui tale concetto, tanto decantato nella letteratura su ASP.NET, è stato relegato al volume 2.</p>
+<p>Poiché questo documento è destinato agli studenti, per i nostri esempi utilizziamo solo strumenti disponibili gratuitamente su Internet. Il lettore potrà così procurarseli e testare gli esempi sul proprio computer personale. L’appendice «Gli strumenti del web» fornisce indicazioni su come scaricare e installare questi strumenti.</p>
+<p><strong>Serge Tahé</strong>, Aprile 2004</p>
 
 
 
